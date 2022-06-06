@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&display=swap');
+body{
+  font-family: 'Charis SIL', serif;
+  background-color: black;
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

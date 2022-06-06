@@ -1,0 +1,173 @@
+
+/* .poster img
+{
+    height: 25px;
+} */
+.row-post
+{
+   
+    color: white;
+    /* margin-top: 10px; */
+    overflow: hidden;
+
+}
+.row-post h2
+{
+    margin-left: 20px;
+    font-size: 23px;
+    font-weight: 600;
+}
+@media (max-width:767px)
+{
+    .row-post h2
+    {
+        font-size: 18px;
+        margin-top: 3px;
+    }
+}
+.poster
+{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-left: 10px;
+    gap:12px;
+   
+}
+.smallposter
+{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-left: 10px;
+    gap:12px
+}
+
+.poster::-webkit-scrollbar
+{
+    display: none;
+}
+.smallposter::-webkit-scrollbar
+{
+    display: none;
+}
+.poster img
+{
+    height: 300px;
+    cursor: pointer;
+  
+}
+@media (max-width:767px)
+{
+    .poster img
+    {
+        height: 430px;
+        width: 340px;
+    }
+}
+/* .poster img:hover
+{
+    transform: scale(1.2);
+} */
+.smallposter img
+{
+    height: 250px; 
+    cursor: pointer;
+   
+
+}
+.smallposter img:hover
+{
+    transform: scale(1.1);
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    /* box-shadow: 10px 10px 8px 10px #da0b0b; */
+
+}
+.movie:hover .poster-overlay
+/* .movie:hover .youtube */
+
+{
+    /* display: block; */
+    /* background-color:white; */
+    visibility: visible;
+    transform: scale(1.5);
+    /* display: flex;
+    gap: 20px; */
+     background-color: rgba(0, 0, 0, 0.5); 
+    
+    /* background-color: black; */
+}
+
+.poster-overlay
+{
+    height: 200px;
+    width: 135px;
+    left: 34px;
+
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    /* background-color: white; */
+    position: absolute;
+    top: 50px;
+    z-index: 3;
+   padding:0px 5px;
+    transform: scale(1.5);
+   /* display: none; */
+   visibility: hidden;
+   
+
+}
+@media (max-width:767px)
+{
+    .poster-overlay
+    {
+        height: 290px;
+         width: 240px;
+         top: 70px;
+         left: 50px;
+    }
+}
+.movie
+{
+    position: relative;
+}
+.overlay-btn
+{
+    /* outline: 3px solid white;
+    background-color: aqua; */
+    /* margin-top: 50%;
+    margin-left: 50px; */
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    padding: 4px 15px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+}
+@media (max-width:767px)
+{
+    .overlay-btn
+    {
+        bottom: 50px;
+        left: 40%;
+    }
+}
+.overlay-btn:hover
+{
+    background-color: rgba(128, 126, 126, 0.8);
+    color: white;
+}
+.overlay-title
+{
+    margin-top: 10%;
+    font-size: 13px;
+    text-align: center;
+    
+}
+.poster-overlay h6
+{
+    font-size: 10px;
+    text-align: center;
+}

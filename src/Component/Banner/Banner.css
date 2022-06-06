@@ -1,0 +1,128 @@
+ .banner
+{
+    
+    
+    background-color: black;
+    /* background: url('https://wallpaperaccess.com/full/2703652.png');  */
+    /* height: 500px;  */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    position: relative;
+   /* width: 100%; */
+    color: white; 
+     /* overflow: hidden;  */
+     /* object-fit: cover; */
+       /* overflow-y: hidden;  */
+       height: 500px;
+       /* display: flex; */
+      /* gap:30px; */
+       /* overflow-y: scroll; */
+  }
+  .banner::-webkit-scrollbar
+  {
+      display: none;
+  }
+  .banner img
+  {
+       width: 100%;
+    
+      height: 500px;
+    
+      object-fit: cover;
+      /* transform: translateY(120px); */
+  }
+
+.banner-content
+{
+    max-width: 700px;
+    position: absolute;
+    top:150px;
+    left: 30px;
+    padding: 10px 20px;
+
+}
+.movie-title
+{
+    font-size: 28px;
+    font-weight: 600;
+    
+}
+@media (max-width:767px)
+{
+    .movie-title
+    {
+        font-size: 20px;
+    } 
+}
+
+button
+{
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: 400;
+}
+.play-btn,.mylist-btn
+{
+    background-color: rgba(51, 51, 51, 0.7);
+    padding: 6px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+button:hover
+{
+    background-color: rgb(199, 197, 197);
+    color: black;
+}
+.bann .movie-description
+{
+    margin-top: -150px;
+    position: absolute;
+    z-index: 50;
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 800px;
+    margin-left: 30px;
+}
+@media (max-width:767px)
+{
+    .bann .movie-description
+    {
+        margin-top: -190px;
+        font-size: 12px;
+        max-width: 700px;
+        margin-bottom: 10px;
+    }
+}
+/* .banner-bottom
+{
+    height: 50px;
+    background:linear-gradient( to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100% );
+    
+   width: 100%;
+   color: black;
+   position: absolute;
+   bottom: 0px;
+   z-index: 150px;
+  
+}  */
+.banner-title{
+    /* position: absolute;
+    top: 10px; */
+    margin-top: -200px;
+    margin-left: 30px;
+    position: absolute;
+    z-index: 150;
+}
+@media (max-width:767px)
+{
+    .banner-title
+    {
+        margin-top: -250px;
+       
+    }
+}
+.bann img{
+    height: 500px;
+}
